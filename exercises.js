@@ -26,8 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-var bango1
-var bango2
+var bango1 = 1
+var bango2 = 2
 
 
 
@@ -49,7 +49,7 @@ var bango2
 function add(num1,num2){
 	return num1 + num2 ;
 }
-var sum = add(1,2)
+var sum = add(bango1,bango2)
 console.log(sum)
 
 
@@ -204,14 +204,14 @@ console.log(checkQuotient());
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-var bango3;
-var bango4;
-var bango5;
+var bango3=2
+var bango4=4
+var bango5=6
 function addThenSubtract(num1, num2, num3){
 	return (num1+num2)-num3;
 
 }
-console.log(addThenSubtract(2,4,6));
+console.log(addThenSubtract(bango3,bango4,bango5));
 
 
 
@@ -274,6 +274,7 @@ console.log(createFullName('Ralph','Ramos'))
 function eatFood(firstName, lastName, food){
 	return firstName + ' ' + lastName+' ' + food
 }
+console.log('Ralph','Ramos','Quesadillas');
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -334,10 +335,10 @@ console.log(oneCap('example'));
  */
  function verifyDrinkingAge(age){
  	if (age>=21){
- 		return true
+ 		return true;
  	}
  	else{
- 		return false
+ 		return false;
  	}
  }
  var canDrink = verifyDrinkingAge(22);
@@ -355,7 +356,7 @@ console.log(oneCap('example'));
  */
 
 function throwParty(canDrink){
-	if (canDrink = true) {
+	if (canDrink === true) {
 		console.log("Cheee Hoo! We going to da party!");
 	}
 	else{
@@ -363,8 +364,7 @@ function throwParty(canDrink){
 	}
 
 }
-var canParty=throwParty();
-
+var canParty=throwParty(canDrink);
 
 
 
